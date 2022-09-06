@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section id="book-input">
+                <img src="img/People sitting at bookshelves and reading books in bookstore.png" alt="vector">
+                <div class="container">
+                    <form action="#" id="form-input">
+                        <h3>Input Buku Baru</h3>
+                        <label for="title">Judul</label>
+                        <input type="text" name="title" id="title" required>
+                        <label for="author">Penulis</label>
+                        <input type="text" name="author" id="author" required>
+                        <label for="year">Tahun</label>
+                        <input type="number" name="year" id="year" required>
+                        <div class="checkbox">
+                            <label for="already-read">Sudah dibaca</label>
+                            <input type="checkbox" name="already-read" id="already-read">
+                        </div>
+                        <div class="button">
+                            <button type="submit" value="Submit" name="Submit">Masukkan buku ke rak <b>Belum selesai
+                                    dibaca</b></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <section id="book-action">
+            <div class="wrapper">
+                <div class="container action">
+                    <div class="container-search">
+                        <input type="search" name="search" id="search" placeholder="Cari judul buku...">
+                        <input type="button" class="search-button" disabled></input>
+                        <div class="list-wrapper" id="search-container">
+                        </div>
+                    </div>
+                    <div class="list-item"></div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container action">
+                    <h3>Belum Selesai Dibaca</h3>
+                    <div class="list-wrapper" id="unread">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container action">
+                    <h3>Selesai Dibaca</h3>
+                    <div class="list-wrapper" id="complete">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
