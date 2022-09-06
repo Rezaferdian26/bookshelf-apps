@@ -189,6 +189,15 @@ function clearForm() {
 
 document.addEventListener('DOMContentLoaded', function () {
     const submitForm = document.getElementById('form-input');
+    const check = document.getElementById('already-read');
+    check.addEventListener('click', () => {
+        const button = document.querySelector('button');
+        if (check.checked) {
+            button.innerHTML = `Masukkan buku ke rak <b>selesai dibaca</b>`;
+        } else {
+            button.innerHTML = `Masukkan buku ke rak <b>belum selesai dibaca</b>`;
+        }
+    })
     submitForm.addEventListener('submit', function (event) {
         event.preventDefault();
         addBook();
