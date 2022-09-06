@@ -219,7 +219,7 @@ input#search {
     background-color: #22bb33;
     color: white;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: 65px;
     left: 50%;
     opacity: 0;
